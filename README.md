@@ -1,5 +1,8 @@
 <h3 align="center"><strong>Generate random anime facts with a huge database.</strong></h3>
 
+## Support Server
+[Click here](https://discord.gg/UJgGFmd)
+
 ## Installation
 ```bash
 $ npm install anime-fact
