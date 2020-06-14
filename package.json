@@ -1,0 +1,26 @@
+{
+  "name": "anime-facts",
+  "version": "1.0.0",
+  "description": "Generate random anime facts.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/4rlon/anime-facts.git"
+  },
+  "keywords": [
+    "anime",
+    "generator",
+    "facts",
+    "discord",
+    "bot"
+  ],
+  "author": "Arlon",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/4rlon/anime-facts/issues"
+  },
+  "homepage": "https://github.com/4rlon/anime-facts#readme"
+}
