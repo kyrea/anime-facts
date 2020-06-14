@@ -45,7 +45,7 @@ client.on("message", async message => {
 ## Options
 **Options** | **Description** | **Usage**
 :---: | --- | ---
-fact | Random anime facts. | `randomfact.facts()`
+facts | Random anime facts. | `randomfact.facts()`
 
 
 ## License
