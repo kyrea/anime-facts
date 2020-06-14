@@ -49,4 +49,4 @@ fact | Random anime facts. | `randomfact.facts()`
 
 
 ## License
-[MIT](https://github.com/amistaa/random-anime/blob/master/LICENSE) © Arlon
+[GPLv3.0](https://github.com/4rlon/anime-facts/blob/master/LICENSE) © Arlon
