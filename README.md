@@ -5,12 +5,12 @@
 
 ## Installation
 ```bash
-$ npm install anime-fact
+$ npm install anime-facts
 ```
 
 ## Usage
 ```javascript
-const randomfact = require('anime-fact')
+const randomfact = require('anime-facts')
 const fact = randomfact.facts()
 
 console.log(fact)  
@@ -18,7 +18,7 @@ console.log(fact)
 
 ## Discord Bot
 ```javascript
-const randomfact = require('anime-fact')
+const randomfact = require('anime-facts')
 const Discord = require("discord.js");
 const client = new Discord.Client();
 
