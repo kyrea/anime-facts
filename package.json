@@ -1,6 +1,6 @@
 {
   "name": "anime-facts",
-  "version": "1.0.7",
+  "version": "1.0.8",
   "description": "Generate random anime facts.",
   "main": "index.js",
   "scripts": {
@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+ssh://git@github.com/4rlon/anime-facts.git"
+    "url": "git+ssh://git@github.com/notkyoyo/anime-facts.git"
   },
   "keywords": [
     "anime",
@@ -17,10 +17,10 @@
     "discord",
     "bot"
   ],
-  "author": "Arlon",
+  "author": "Kyoyo",
   "license": "GPLv3",
   "bugs": {
-    "url": "https://github.com/4rlon/anime-facts/issues"
+    "url": "https://github.com/notkyoyo/anime-facts/issues"
   },
-  "homepage": "https://github.com/4rlon/anime-facts#readme"
+  "homepage": "https://github.com/notkyoyo/anime-facts#readme"
 }

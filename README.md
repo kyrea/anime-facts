@@ -10,10 +10,10 @@ $ npm install anime-facts
 
 ## Usage
 ```javascript
-const randomfact = require('anime-facts')
-const fact = randomfact.facts()
+const randomfact = require('anime-facts');
+const fact = randomfact.facts();
 
-console.log(fact)  
+console.log(fact);
 ```
 
 ## Discord Bot
@@ -52,4 +52,4 @@ facts | Random anime facts. | `randomfact.facts()`
 
 
 ## License
-[GPLv3.0](https://github.com/4rlon/anime-facts/blob/master/LICENSE) © Arlon
+[GPLv3.0](https://github.com/notkyoyo/anime-facts/blob/master/LICENSE) © Kyoyo
