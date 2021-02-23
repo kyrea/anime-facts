@@ -1,4 +1,3 @@
-const randomfact = require('../index');
-const fact = randomfact.facts();
+const fact = require("../index");
 
-console.log(fact); 
+console.log(fact.getFact());

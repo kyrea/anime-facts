@@ -1,10 +1,10 @@
 {
   "name": "anime-facts",
-  "version": "1.0.9",
+  "version": "1.2.0",
   "description": "Generate random anime facts.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "node test/test.js"
   },
   "repository": {
     "type": "git",
@@ -18,9 +18,12 @@
     "bot"
   ],
   "author": "Kyoyo",
-  "license": "GPLv3",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/notkyoyo/anime-facts/issues"
   },
-  "homepage": "https://github.com/notkyoyo/anime-facts#readme"
+  "homepage": "https://github.com/notkyoyo/anime-facts#readme",
+  "dependencies": {
+    "axios": "^0.21.1"
+  }
 }

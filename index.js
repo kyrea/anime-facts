@@ -1,13 +1,17 @@
-const databaseFact = require('./database/facts.json');
+const axios = require("axios");
 
-function animeFact() {
-  return {
-    facts: () => databaseFact[mathRandom(databaseFact.length)]
-  };
+const fact = {
+  async getFact() {
+    return new Promise(async (resolve, reject) => {
+      await axios
+        .get(`https://animu.ml/fact`)
+        .then(function (response) {
+          resolve(response.data);
+        })
+        .catch((err) => {
+          return reject(err);
+        });
+    });
+  },
 };
-
-function mathRandom(max) {
-    return ~~(Math.random() * max);
-};
-
-module.exports = animeFact();
+module.exports = fact;
