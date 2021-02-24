@@ -18,36 +18,6 @@ const random = require("anime-facts");
 random.getFact().then((fact) => console.log(fact));
 ```
 
-## Discord Bot
-
-```javascript
-const random = require("anime-facts");
-const Discord = require("discord.js");
-const client = new Discord.Client();
-
-client.login("BOT_TOKEN");
-
-client.on("message", async (message) => {
-  //Plain Text
-  if (message.content === "plain") {
-    const fact = random.getFact();
-    message.channel.send(fact);
-  }
-  //Embed Image (D.JS Version 11)
-  if (message.content === "embed") {
-    const fact = random.getFact();
-    const embed = new Discord.RichEmbed().setDescription(fact);
-    message.channel.send(embed);
-  }
-  //Embed Image (D.JS Version 12)
-  if (message.content === "embed") {
-    const fact = random.getFact();
-    const embed = new Discord.MessageEmbed().setDescription(fact);
-    message.channel.send(embed);
-  }
-});
-```
-
 ## Functions
 
 | **Functions** | **Description**              | **Usage**          |
