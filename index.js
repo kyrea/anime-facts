@@ -6,7 +6,7 @@ const fact = {
       await axios
         .get(`https://animu.ml/fact`)
         .then(function (response) {
-          resolve(response.data.fact);
+          resolve(response.data);
         })
         .catch((err) => {
           return reject(err);

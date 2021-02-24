@@ -15,9 +15,7 @@ $ npm install anime-facts
 
 ```javascript
 const random = require("anime-facts");
-const fact = random.getFacts(); // Returns id, fact, tags
-
-console.log(fact);
+random.getFact().then((fact) => console.log(fact));
 ```
 
 ## Discord Bot
@@ -32,18 +30,18 @@ client.login("BOT_TOKEN");
 client.on("message", async (message) => {
   //Plain Text
   if (message.content === "plain") {
-    const fact = random.getfact();
+    const fact = random.getFact();
     message.channel.send(fact);
   }
   //Embed Image (D.JS Version 11)
   if (message.content === "embed") {
-    const fact = random.getfact();
+    const fact = random.getFact();
     const embed = new Discord.RichEmbed().setDescription(fact);
     message.channel.send(embed);
   }
   //Embed Image (D.JS Version 12)
   if (message.content === "embed") {
-    const fact = random.getfact();
+    const fact = random.getFact();
     const embed = new Discord.MessageEmbed().setDescription(fact);
     message.channel.send(embed);
   }
