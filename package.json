@@ -1,6 +1,6 @@
 {
   "name": "anime-facts",
-  "version": "2.2.5",
+  "version": "2.2.6",
   "description": "Generate random anime facts.",
   "main": "index.js",
   "types": "index.d.ts",
