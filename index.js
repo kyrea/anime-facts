@@ -1,17 +1,11 @@
 const axios = require("axios");
 
 const fact = {
-  async getFact() {
-    return new Promise(async (resolve, reject) => {
-      await axios
-        .get(`https://animu.ml/fact`)
-        .then(function (response) {
-          resolve(response.data);
-        })
-        .catch((err) => {
-          return reject(err);
-        });
-    });
+  getFact() {
+    return axios
+      .get(`https://animu.ml/fact`)
+      .then((response) => response.data)
   },
 };
+
 module.exports = fact;
