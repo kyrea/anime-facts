@@ -1,11 +1,11 @@
 {
   "name": "anime-facts",
-  "version": "1.2.5",
+  "version": "2.2.5",
   "description": "Generate random anime facts.",
   "main": "index.js",
   "types": "index.d.ts",
   "scripts": {
-    "test": "node test/test.js"
+    "test": "node __tests__/getFact.js"
   },
   "repository": {
     "type": "git",
