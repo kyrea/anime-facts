@@ -4,3 +4,4 @@ __tests__/
 .deepsource.toml
 .github/
 package-lock.json
+index.d.js
