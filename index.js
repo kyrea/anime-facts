@@ -26,46 +26,45 @@ async function getFact(tags, minLength, maxLength) {
     params.maxLength = maxLength;
   }
   return fetch({
-    url: `https://animu.ml/fact?tags=${params.tags}&minLength=${params.minLength}&maxLength=${params.maxLength}`,
-    parse: "json",
-  })
-    .then((res) => {
-      if (res.statusCode !== 200)
-        switch (res.statusCode) {
+           url : `https://animu.ml/fact?tags=${params.tags}&minLength=${
+               params.minLength}&maxLength=${params.maxLength}`,
+           parse : "json",
+         })
+      .then((res) => {
+        if (res.statusCode !== 200)
+          switch (res.statusCode) {
           case 404:
             return {
-              statusCode: res.statusCode,
-              body: res.body,
-              error: "Could not find any fact",
+              statusCode : res.statusCode,
+              body : res.body,
+              error : "Could not find any fact",
             };
             break;
           case 502:
             return {
-              statusCode: res.statusCode,
-              body: res.body,
-              error: "Server down",
+              statusCode : res.statusCode,
+              body : res.body,
+              error : "Server down",
             };
             break;
           default:
             return {
-              statusCode: res.statusCode,
-              body: res.body,
-              error: "Unknown error",
+              statusCode : res.statusCode,
+              body : res.body,
+              error : "Unknown error",
             };
-        }
-      return {
-        id: res.body._id,
-        tags: res.body.tags || [],
-        fact: res.body.fact,
-        length: res.body.length,
-      };
-    })
-    .catch((err) => {
-      throw err;
-    });
+          }
+        return {
+          id : res.body._id,
+          tags : res.body.tags || [],
+          fact : res.body.fact,
+          length : res.body.length,
+        };
+      })
+      .catch((err) => { throw err; });
 }
 
-module.exports = { getFact };
+module.exports = {getFact};
 
 /**
  * @typedef {object} Fact
