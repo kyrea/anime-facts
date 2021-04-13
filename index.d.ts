@@ -1,7 +1,8 @@
-interface AnimeFact {
+interface AnimeFacts {
   _id: number;
   tags: string[];
   fact: string;
+  length: number;
 }
 
-export async function getFact(): Promise<AnimeFact>;
+export function getFact(): Promise<AnimeFacts>;
