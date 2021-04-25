@@ -4,6 +4,8 @@
 
 Need support? _[Click here](https://discord.gg/yyW389c)_
 
+### First make sure you have a [Animu](https://animu.ml) API Token. Join _[this](https://discord.gg/yyW389c)_ discord server to get one.
+
 ## Installation:
 
 ### NPM
@@ -30,14 +32,17 @@ $ yarn add anime-facts
 
 
 ```javascript
-const { getFact } = require("anime-facts");
-getFact().then((fact) => console.log(fact));
+const AnimeFact =require("anime-facts");
+const api = new AnimeFact("YOUR TOKEN");
+
+api.getFact().then((res) => console.log(res));
 ```
 ### Using Query:
 ```javascript
-const { getFact } = require("anime-facts");
+const AnimeFact =require("anime-facts");
+const api = new AnimeFact("YOUR TOKEN");
 // Note currently there are only fews tags, length available in the database. So, it might return the same data multiple times.
-getFact(null, 1, 100).then((fact) => console.log(fact)); 
+api.getFact(null, 1, 100).then((res) => console.log(res));
 
 // Returns with:
 {
@@ -49,9 +54,9 @@ getFact(null, 1, 100).then((fact) => console.log(fact));
 ```
 
 ## Functions
-| **Functions** | **Description**              | **Usage**          |
-| :-----------: | ---------------------------- | ------------------ |
-|    getFact    | Generate random anime facts. | `random.getFact()` |
+| **Functions** | **Description**              |
+| :-----------: | ---------------------------- |
+|    getFact    | Generate random anime facts. |  
 
 ## Credits
 [@LamkasDev](https://github.com/LamkasDev) for adding facts to prior database. _PR [#1](https://github.com/notkyoyo/anime-facts/pull/1)_\
