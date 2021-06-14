@@ -7,6 +7,7 @@
   "scripts": {
     "test": "node __tests__/getFact.js"
   },
+  "api": "https://animu.ml",
   "repository": {
     "type": "git",
     "url": "git+ssh://git@github.com/notkyoyo/anime-facts.git"
