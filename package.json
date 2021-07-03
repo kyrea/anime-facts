@@ -1,13 +1,13 @@
 {
   "name": "anime-facts",
-  "version": "4.2.8",
+  "version": "4.3.8",
   "description": "Generate random anime facts.",
   "main": "index.js",
   "types": "index.d.ts",
   "scripts": {
     "test": "node __tests__/getFact.js"
   },
-  "api": "https://animu.ml",
+  "api": "https://airi.kyoyo.me/api",
   "repository": {
     "type": "git",
     "url": "git+ssh://git@github.com/notkyoyo/anime-facts.git"
