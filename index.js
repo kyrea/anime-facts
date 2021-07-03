@@ -1,5 +1,6 @@
 const EventEmitter = require("events");
 const fetch = require("phin");
+const { api } = require("./package.json");
 
 class AnimeFact extends EventEmitter {
   /**
@@ -40,7 +41,7 @@ class AnimeFact extends EventEmitter {
       params.maxLength = maxLength;
     }
     return fetch({
-      url: `https://animu.ml/fact?tags=${params.tags}&minLength=${params.minLength}&maxLength=${params.maxLength}`,
+      url: `${api}/fact?tags=${params.tags}&minLength=${params.minLength}&maxLength=${params.maxLength}`,
       headers: {
         Auth: auth,
         "Content-Type": "application/json",
