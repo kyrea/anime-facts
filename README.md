@@ -62,7 +62,13 @@ api.getFact(null, 1, 100).then((res) => console.log(res));
 
 ## Credits
 
-[@LamkasDev](https://github.com/LamkasDev) for adding facts to prior database. _PR [#1](https://github.com/notkyoyo/anime-facts/pull/1)_\
-[@xMercyTheDeveloper](https://github.com/xMercyTheDeveloper) for adding a fact to prior database. _PR [#2](https://github.com/notkyoyo/anime-facts/pull/2)_\
-[@Lioness100](https://github.com/Lioness100) for adding types and improving codes in version [2.2.6](https://www.npmjs.com/package/anime-facts/v/2.2.6). _PR [#3](https://github.com/notkyoyo/anime-facts/pull/3) and [#4](https://github.com/notkyoyo/anime-facts/pull/4)_\
-[@Aetrnyx](https://github.com/aetrnyx) for fixing the readme in [4.3.9](https://www.npmjs.com/package/anime-facts/v/4.3.9). _PR [#15](https://github.com/notkyoyo/anime-facts/pull/15)_
+[@LamkasDev](https://github.com/LamkasDev) for adding facts to prior database.
+_PR [#1](https://github.com/notkyoyo/anime-facts/pull/1)_\
+[@xMercyTheDeveloper](https://github.com/xMercyTheDeveloper) for adding a fact to
+prior database. _PR [#2](https://github.com/notkyoyo/anime-facts/pull/2)_\
+[@Lioness100](https://github.com/Lioness100) for adding types and improving
+codes in version [2.2.6](https://www.npmjs.com/package/anime-facts/v/2.2.6). _PR
+[#3](https://github.com/notkyoyo/anime-facts/pull/3) and
+[#4](https://github.com/notkyoyo/anime-facts/pull/4)_\
+[@Aetrnyx](https://github.com/aetrnyx) for fixing the readme in [4.3.9](https://www.npmjs.com/package/anime-facts/v/4.3.9).
+_PR [#15](https://github.com/notkyoyo/anime-facts/pull/15)_
