@@ -22,11 +22,11 @@ $ yarn add anime-facts
 
 ### Query parameters _[ OPTIONAL ]_
 
-| Parameters     | Type     | Description                                                                                                                                                                                                                                                                                                         |
-| :-------- | :------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| tags      | `String` | Filter random fact by tag(s). Takes a list of one or more tag names, separated by a comma (meaning `AND`) or a pipe (meaning `OR`). A comma separated list will match facts that have **_all_** of the given tags. While a pipe (`\|`) separated list will match facts that have **_either_** of the provided tags.|                                                                                                          |
-| minLength | `Int`    | The minimum Length in characters ( can be combined with `maxLength` )               |                                          |
-| maxLength | `Int`    | The maximum Length in characters ( can be combined with `minLength` )   |                                                                                                                                                                                        
+| Parameters | Type     | Description                                                                                                                                                                                                                                                                                                         |
+| :--------- | :------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | --- |
+| tags       | `String` | Filter random fact by tag(s). Takes a list of one or more tag names, separated by a comma (meaning `AND`) or a pipe (meaning `OR`). A comma separated list will match facts that have **_all_** of the given tags. While a pipe (`\|`) separated list will match facts that have **_either_** of the provided tags. |     |
+| minLength  | `Int`    | The minimum Length in characters ( can be combined with `maxLength` )                                                                                                                                                                                                                                               |     |
+| maxLength  | `Int`    | The maximum Length in characters ( can be combined with `minLength` )                                                                                                                                                                                                                                               |
 
 ## Usage:
 
@@ -63,6 +63,8 @@ api.getFact(null, 1, 100).then((res) => console.log(res));
 ## Credits
 
 [@LamkasDev](https://github.com/LamkasDev) for adding facts to prior database\
-[@xMercyTheDeveloper](https://github.com/xMercyTheDeveloper) for adding a fact to prior database\
-[@Lioness100](https://github.com/Lioness100) for adding types and improving codes in version [2.2.6](https://www.npmjs.com/package/anime-facts/v/2.2.6)\
+[@xMercyTheDeveloper](https://github.com/xMercyTheDeveloper) for adding a fact to
+prior database\
+[@Lioness100](https://github.com/Lioness100) for adding types and improving
+codes in version [2.2.6](https://www.npmjs.com/package/anime-facts/v/2.2.6)\
 [@Aetrnyx](https://github.com/aetrnyx) for fixing the readme in [4.3.9](https://www.npmjs.com/package/anime-facts/v/4.3.9)
