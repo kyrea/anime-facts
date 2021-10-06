@@ -1,6 +1,6 @@
 {
   "name": "anime-facts",
-  "version": "4.3.10",
+  "version": "4.3.11",
   "description": "Generate random anime facts.",
   "main": "index.js",
   "types": "index.d.ts",
@@ -19,7 +19,7 @@
     "discord",
     "bot"
   ],
-  "author": "Kyoyo",
+  "author": "aetrnyx",
   "license": "AGPLv3",
   "bugs": {
     "url": "https://github.com/notkyoyo/anime-facts/issues"
