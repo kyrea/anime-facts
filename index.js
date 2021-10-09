@@ -57,14 +57,12 @@ class AnimeFact extends EventEmitter {
                 body: res.body,
                 error: "Could not find any fact",
               };
-              break;
             case 502:
               return {
                 statusCode: res.statusCode,
                 body: res.body,
                 error: "Server down",
               };
-              break;
             default:
               return {
                 statusCode: res.statusCode,
