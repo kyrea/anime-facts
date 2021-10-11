@@ -25,17 +25,17 @@ class AnimeFact extends EventEmitter {
     const auth = this._auth;
     if (!auth) throw new TypeError("Missing authorization token");
     const params = {};
-    if (tags == undefined) {
+    if (tags === undefined) {
       params.tags = "";
     } else {
       params.tags = tags;
     }
-    if (minLength == undefined) {
+    if (minLength === undefined) {
       params.minLength = "";
     } else {
       params.minLength = minLength;
     }
-    if (maxLength == undefined) {
+    if (maxLength === undefined) {
       params.maxLength = "";
     } else {
       params.maxLength = maxLength;
@@ -57,14 +57,12 @@ class AnimeFact extends EventEmitter {
                 body: res.body,
                 error: "Could not find any fact",
               };
-              break;
             case 502:
               return {
                 statusCode: res.statusCode,
                 body: res.body,
                 error: "Server down",
               };
-              break;
             default:
               return {
                 statusCode: res.statusCode,
