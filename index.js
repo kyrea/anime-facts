@@ -15,33 +15,14 @@ class AnimeFact extends EventEmitter {
 
   /**
    * Gets a fact from the api
-   * @param {string[]} [tags] - the array of tags
-   * @param {number} [minLength] - the minLength for query
-   * @param {number} [maxLength] - the maxLength for query
    * @returns {Promise<Fact>}
    */
 
-  async getFact(tags, minLength, maxLength) {
+  async getFact() {
     const auth = this._auth;
     if (!auth) throw new TypeError("Missing authorization token");
-    const params = {};
-    if (tags === undefined) {
-      params.tags = "";
-    } else {
-      params.tags = tags;
-    }
-    if (minLength === undefined) {
-      params.minLength = "";
-    } else {
-      params.minLength = minLength;
-    }
-    if (maxLength === undefined) {
-      params.maxLength = "";
-    } else {
-      params.maxLength = maxLength;
-    }
     return fetch({
-      url: `${api}/fact?tags=${params.tags}&minLength=${params.minLength}&maxLength=${params.maxLength}`,
+      url: `${api}/fact`,
       headers: {
         Auth: auth,
         "Content-Type": "application/json",
@@ -72,9 +53,7 @@ class AnimeFact extends EventEmitter {
           }
         return {
           id: res.body._id,
-          tags: res.body.tags || [],
           fact: res.body.fact,
-          length: res.body.length,
         };
       })
       .catch((err) => {
@@ -88,7 +67,5 @@ module.exports = AnimeFact;
 /**
  * @typedef {object} Fact
  * @prop {number} id
- * @prop {string[]} tags
  * @prop {string} fact
- * @prop {number} length
  */
