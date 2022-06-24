@@ -1,16 +1,16 @@
 {
   "name": "anime-facts",
-  "version": "4.3.12",
+  "version": "5.3.12",
   "description": "Generate random anime facts.",
   "main": "index.js",
   "types": "index.d.ts",
   "scripts": {
     "test": "node __tests__/getFact.js"
   },
-  "api": "https://airi.kyoyo.me/api",
+  "api": "https://animu.ml/api",
   "repository": {
     "type": "git",
-    "url": "git+ssh://git@github.com/notkyoyo/anime-facts.git"
+    "url": "git+ssh://git@github.com/kyrea/anime-facts.git"
   },
   "keywords": [
     "anime",
@@ -19,12 +19,12 @@
     "discord",
     "bot"
   ],
-  "author": "aetrnyx",
+  "author": "aeryk",
   "license": "AGPLv3",
   "bugs": {
-    "url": "https://github.com/notkyoyo/anime-facts/issues"
+    "url": "https://github.com/kyrea/anime-facts/issues"
   },
-  "homepage": "https://github.com/notkyoyo/anime-facts#readme",
+  "homepage": "https://github.com/kyrea/anime-facts#readme",
   "dependencies": {
     "eventemitter3": "^4.0.7",
     "phin": "^3.5.1"
