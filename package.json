@@ -1,13 +1,13 @@
 {
   "name": "anime-facts",
-  "version": "5.3.14",
+  "version": "6.3.14",
   "description": "Generate random anime facts.",
   "main": "index.js",
   "types": "index.d.ts",
   "scripts": {
     "test": "node __tests__/getFact.js"
   },
-  "api": "https://animu.ml/api",
+  "api": "https://waifu.it/api",
   "repository": {
     "type": "git",
     "url": "git+ssh://git@github.com/kyrea/anime-facts.git"
@@ -27,6 +27,6 @@
   "homepage": "https://github.com/kyrea/anime-facts#readme",
   "dependencies": {
     "eventemitter3": "^4.0.7",
-    "phin": "^3.5.1"
+    "phin": "^3.7.0"
   }
 }

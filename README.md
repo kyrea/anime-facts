@@ -1,10 +1,10 @@
 <h3 align="center"><strong>Generate random anime facts with a huge database.</strong></h3>
-<center><strong>Powered by <a href="https://animu.ml/" target="_blank">Animu</a></strong></center>
+<center><strong>Powered by <a href="https://waifu.it/" target="_blank">Waifu.it</a></strong></center>
 <br>
 
 Need support? _[Click here](https://discord.gg/yyW389c)_
 
-### First make sure you have a [Animu](https://animu.ml/) API Token. Join _[this](https://discord.gg/yyW389c)_ discord server to get one.
+### First make sure you have a [Waifu.it](https://waifu.it/) API Token. Join _[this](https://discord.gg/yyW389c)_ discord server to get one.
 
 ## Installation:
 
